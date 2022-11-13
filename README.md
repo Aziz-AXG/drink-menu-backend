@@ -13,6 +13,7 @@
 # VIEW The project in Website
 
 ## "[github.com/AXG-coder/drink-menu-frontend](https://github.com/AXG-coder/drink-menu-frontend)"
+#The problem with the images not showing up is using a free hosting
 
 ## To run in 
 
