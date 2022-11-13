@@ -9,12 +9,17 @@ const app = express()
 
 app.use(express.json())
 app.use(cors())
+app.set('view engine', 'ejs')
 
 app.use('/uploads', express.static('uploads'))
 
 app.use((req, res, next) => {
             console.log(req.path, req.method)
             next()
+})
+
+app.get('/', async (req, res) => {
+            res.render('index')
 })
 
 app.use('/api/drink', DrinkRoutes)
